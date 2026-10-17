@@ -1,0 +1,189 @@
+{
+  "version": "iwsdk.scene.v1",
+  "units": "meters",
+  "components": {},
+  "resources": {},
+  "nodes": [
+    {
+      "id": "garden",
+      "name": "Chinese Garden",
+      "content": {
+        "type": "asset",
+        "asset": "garden"
+      }
+    },
+    {
+      "id": "garden-collider",
+      "name": "Garden Collider",
+      "content": {
+        "type": "asset",
+        "asset": "garden-collider"
+      },
+      "framingRole": "support",
+      "components": {
+        "LocomotionEnvironment": {}
+      }
+    },
+    {
+      "id": "views",
+      "name": "Scenic Views",
+      "content": {
+        "type": "group"
+      },
+      "children": [
+        {
+          "id": "view-gate",
+          "name": "Moon Gate",
+          "content": {
+            "type": "group"
+          },
+          "transform": {
+            "position": [
+              0,
+              0,
+              12.2
+            ]
+          },
+          "components": {
+            "PointOfInterest": {
+              "view": "gate",
+              "radius": 3.0,
+              "facing": "node"
+            }
+          }
+        },
+        {
+          "id": "view-zigzag",
+          "name": "Nine-Turn Bridge",
+          "content": {
+            "type": "group"
+          },
+          "transform": {
+            "position": [
+              0.2,
+              0,
+              1.3
+            ]
+          },
+          "components": {
+            "PointOfInterest": {
+              "view": "zigzag",
+              "radius": 2.4,
+              "facing": "anywhere"
+            }
+          }
+        },
+        {
+          "id": "view-pavilion",
+          "name": "Pavilion of Lingering Clouds",
+          "content": {
+            "type": "group"
+          },
+          "transform": {
+            "position": [
+              -1.2,
+              0,
+              -4.3
+            ]
+          },
+          "components": {
+            "PointOfInterest": {
+              "view": "pavilion",
+              "radius": 2.05,
+              "facing": "node"
+            }
+          }
+        },
+        {
+          "id": "view-bridge",
+          "name": "Moon-Shadow Bridge",
+          "content": {
+            "type": "group"
+          },
+          "transform": {
+            "position": [
+              -6.9,
+              0,
+              -4.3
+            ]
+          },
+          "components": {
+            "PointOfInterest": {
+              "view": "bridge",
+              "radius": 2.2,
+              "facing": "anywhere"
+            }
+          }
+        },
+        {
+          "id": "view-cascade",
+          "name": "Rockery Cascade",
+          "content": {
+            "type": "group"
+          },
+          "transform": {
+            "position": [
+              -3.25,
+              0,
+              -6.92
+            ]
+          },
+          "components": {
+            "PointOfInterest": {
+              "view": "cascade",
+              "radius": 1.0,
+              "facing": "focus",
+              "focus": [
+                -4.75,
+                -0.3,
+                -7.25
+              ]
+            }
+          }
+        },
+        {
+          "id": "view-bamboo",
+          "name": "Listening-Bamboo Path",
+          "content": {
+            "type": "group"
+          },
+          "transform": {
+            "position": [
+              14.2,
+              0,
+              0.4
+            ]
+          },
+          "components": {
+            "PointOfInterest": {
+              "view": "bamboo",
+              "radius": 3.4,
+              "facing": "anywhere"
+            }
+          }
+        },
+        {
+          "id": "view-pine",
+          "name": "Pine-Breeze Terrace",
+          "content": {
+            "type": "group"
+          },
+          "transform": {
+            "position": [
+              -14.6,
+              0,
+              3.8
+            ]
+          },
+          "components": {
+            "PointOfInterest": {
+              "view": "pine",
+              "radius": 3.0,
+              "facing": "anywhere"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

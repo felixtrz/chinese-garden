@@ -1,0 +1,55 @@
+{
+  "name": "chinese-garden",
+  "version": "0.1.0",
+  "description": "The Garden of Lingering Clouds (留云园): a walkable classical Chinese garden for desktop, mobile and VR, built with the Immersive Web SDK.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixtrz/chinese-garden.git"
+  },
+  "keywords": [
+    "iwsdk",
+    "webxr",
+    "threejs",
+    "vr",
+    "chinese-garden",
+    "procedural"
+  ],
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "iwsdk dev restart --open --foreground",
+    "dev:runtime": "vite",
+    "dev:down": "iwsdk dev down",
+    "dev:status": "iwsdk dev status",
+    "reference:status": "iwsdk reference status",
+    "reference:warmup": "iwsdk reference warmup",
+    "typecheck": "tsc --noEmit",
+    "build": "vite build",
+    "preview": "vite preview",
+    "smoke": "node tools/smoke.mjs",
+    "capture": "node tools/capture.mjs"
+  },
+  "dependencies": {
+    "@iwsdk/core": "1.0.1",
+    "@pmndrs/uikit": "^1.0.74",
+    "three": "npm:super-three@0.181.0"
+  },
+  "devDependencies": {
+    "@iwsdk/cli": "1.0.1",
+    "@iwsdk/reference": "1.0.1",
+    "@iwsdk/vite-plugin-dev": "1.0.1",
+    "@meta-quest/metavr": "^1.8.1",
+    "@types/three": "^0.181.0",
+    "playwright": "^1.56.1",
+    "typescript": "^5.5.0",
+    "vite": "^7.1.4"
+  },
+  "overrides": {
+    "sharp": "0.35.4",
+    "three": "npm:super-three@0.181.0"
+  },
+  "engines": {
+    "node": ">=20.19.0 <21.0.0-0 || >=22.12.0 <23.0.0-0 || >=24.0.0"
+  }
+}
